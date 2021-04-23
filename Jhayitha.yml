@@ -63,9 +63,9 @@ proxies:
 
 - name: "Movistar"
   type: trojan
-  server: pv.networkvpn.ml
-  port: 443
-  password: bf93cd98-ee23-4625-b4e0-bc22d4df18dd
+  server: tr.networkvpn.ml
+  port: 27785
+  password: jhayita
   udp: true
   sni: whatsapp.net
   alpn:
