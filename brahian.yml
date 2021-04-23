@@ -63,9 +63,9 @@ proxies:
 
 - name: "Movistar"
   type: trojan
-  server: ca-trojan.bonds.id
-  port: 443
-  password: 0dd57620-a310-11eb-a198-1239d0255272
+  server: tr.networkvpn.ml
+  port: 27618
+  password: VO9v7iirS4
   udp: true
   sni: whatsapp.net
   alpn:
