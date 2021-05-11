@@ -49,13 +49,13 @@ cfw-latency-timeout: 5000
 proxies:
 
 
-- name: "avantel"
+- name: "movistar"
   type: trojan
   server: tr.networkvpn.ml
   port: 25438
   password: JjfS9OoCHk
   udp: true
-  sni: www.gov.co
+  sni: whatsapp.net
   alpn:
   - h2
   - http/1.1
@@ -65,7 +65,7 @@ proxy-groups:
 - name: "PROXY"
   type: select
   proxies:
-    - avantel
+    - movistar
    
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -73,13 +73,13 @@ proxy-groups:
 - name: "Final"
   type: select
   proxies:
-    - avantel
+    - movistar
     - "PROXY"
 
 - name: "Apple"
   type: select
   proxies:
-    - avantel
+    - movistar
 
     - "PROXY"
 
@@ -96,7 +96,7 @@ proxy-groups:
 - name: "Hijacking"
   type: select
   proxies:
-    - avantel
+    - movistar
 
     - "PROXY"
 
