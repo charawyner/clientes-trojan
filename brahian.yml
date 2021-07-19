@@ -47,38 +47,18 @@ cfw-bypass:
 cfw-latency-timeout: 5000
 
 proxies:
+- {name: 🚀tigo cdn🔯, server: 104.16.88.20, port: 443, type: vmess, uuid: dc9a9f57-3209-4176-af7b-f1e5ee79a234, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /brahian, ws-headers: {Host: www.mutualser.org}}
+- {name: 🚀movistar🍃, server: usav2.networkvpn.ml, port: 443, type: vmess, uuid: dc9a9f57-3209-4176-af7b-f1e5ee79a234, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /brahian, ws-headers: {Host: www.mutualser.org}}
+- {name: 🚀avantel🍃, server: usav2.networkvpn.ml, port: 443, type: vmess, uuid: dc9a9f57-3209-4176-af7b-f1e5ee79a234, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /brahian, ws-headers: {Host: www.gov.co}}
 
-
-- name: "avantel"
-  type: trojan
-  server: ca-trojan.bonds.id
-  port: 443
-  password: 0dd57620-a310-11eb-a198-1239d0255272
-  udp: true
-  sni: www.gov.co
-  alpn:
-  - h2
-  - http/1.1
-  skip-cert-verify: true
-
-- name: "Movistar"
-  type: trojan
-  server: tr.networkvpn.ml
-  port: 27618
-  password: VO9v7iirS4
-  udp: true
-  sni: whatsapp.net
-  alpn:
-  - h2
-  - http/1.1
-  skip-cert-verify: true
   
 proxy-groups:
 - name: "PROXY"
   type: select
   proxies:
-    - avantel
-    - Movistar
+    - 🚀tigo cdn🔯
+    - 🚀movistar🍃
+    - 🚀avantel🍃
    
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -86,15 +66,17 @@ proxy-groups:
 - name: "Final"
   type: select
   proxies:
-    - avantel
-    - Movistar
+    - 🚀tigo cdn🔯
+    - 🚀movistar🍃
+    - 🚀avantel🍃
     - "PROXY"
 
 - name: "Apple"
   type: select
   proxies:
-    - avantel
-    - Movistar
+    - 🚀tigo cdn🔯
+    - 🚀movistar🍃
+    - 🚀avantel🍃
     - "PROXY"
 
 - name: "GlobalMedia"
@@ -110,7 +92,9 @@ proxy-groups:
 - name: "Hijacking"
   type: select
   proxies:
-    - avantel
+    - 🚀tigo cdn🔯
+    - 🚀movistar🍃
+    - 🚀avantel🍃
 
     - "PROXY"
 
