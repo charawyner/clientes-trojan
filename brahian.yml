@@ -47,7 +47,7 @@ cfw-bypass:
 cfw-latency-timeout: 5000
 
 proxies:
-- {name: 🚀tigo cdn🔯, server: 104.16.88.20, port: 443, type: vmess, uuid: dc9a9f57-3209-4176-af7b-f1e5ee79a234, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /brahian, ws-headers: {Host: v2ray.mynetfree.tk}}
+- {name: 🚀tigo cdn🔯, server: 104.16.88.20, port: 443, type: vmess, uuid: 18faaea1-edb8-11eb-9c96-b10e18e6cc54, alterId: 64, cipher: auto,udp: true, tls: true, skip-cert-verify: true, network: ws, ws-path: /t9vj1T4J/, ws-headers: {Host: www.zeusvpn.tk}}
 - {name: 🚀movistar🍃, server: 172.104.199.205, port: 443, type: vmess, uuid: dc9a9f57-3209-4176-af7b-f1e5ee79a234, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /brahian, ws-headers: {Host: www.mutualser.org}}
 - {name: 🚀avantel🍃, server: 172.104.199.205, port: 443, type: vmess, uuid: dc9a9f57-3209-4176-af7b-f1e5ee79a234, alterId: 64, cipher: auto, tls: true, network: ws, ws-path: /brahian, ws-headers: {Host: www.gov.co}}
 
