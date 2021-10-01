@@ -48,7 +48,7 @@ cfw-latency-timeout: 5000
 
 proxies:
 - {name: 🚀tigo cdn🔯, server: 52.222.174.76, port: 443, type: vmess, uuid: 8be9f429-64db-4acb-d3da-1f19d737df0f, alterId: 64, cipher: auto,udp: true, tls: true, skip-cert-verify: true, network: ws, ws-path: /brahian, ws-headers: {Host: d3rppn5cah5fpb.cloudfront.net}}
-- {name: 🚀movistar🍃, server: 132.226.165.29, port: 443, type: vmess, uuid: 8be9f429-64db-4acb-d3da-1f19d737df0f, alterId: 64, cipher: auto,udp: true, tls: true, skip-cert-verify: true, network: ws, ws-path: /brahian, ws-headers: {Host: www.mutualser.org}}
+- {name: 🚀movistar🍃, server: 132.226.165.29, port: 443, type: vmess, uuid: 8be9f429-64db-4acb-d3da-1f19d737df0f, alterId: 64, cipher: auto,udp: true, tls: true, skip-cert-verify: true, network: ws, ws-path: /brahian, ws-headers: {Host: www.segurosbolivar.com}}
 - {name: 🚀avantel🍃, server: xray.mynetfree.tk, port: 443, type: vmess, uuid: 8be9f429-64db-4acb-d3da-1f19d737df0f, alterId: 64, cipher: auto,udp: true, tls: true, skip-cert-verify: true, network: ws, ws-path: /brahian, ws-headers: {Host: www.gov.co}}
 
   
