@@ -79,6 +79,7 @@ proxy-groups:
     - 🚀movistar🍃
     - 🚀avantel🍃
     - "PROXY"
+    
 
 - name: "GlobalMedia"
   type: select
