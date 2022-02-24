@@ -50,8 +50,8 @@ proxies:
 - {name: 🚀wom cdn🔯, server: 104.18.10.163, port: 443, type: vmess, uuid: 8be9f429-64db-4acb-d3da-1f19d737df0f, alterId: 64, cipher: auto,udp: true, tls: true, skip-cert-verify: true, network: ws, ws-path: /brahian, ws-headers: {Host: vrray.networkvpn.ga}}
 
 - {name: 🚀claro cdn🔯, server: 104.19.199.151, port: 443, type: vmess, uuid: 7aff4a32-e736-43fd-8f30-1ed37ead49b5, alterId: 64, cipher: auto,udp: true, tls: true, skip-cert-verify: true, network: ws, ws-path: /rosa, ws-headers: {Host: vrray.networkvpn.ga}}
-- {name: 🚀movistar🍃, server: 132.226.165.29, port: 443, type: vmess, uuid: 8be9f429-64db-4acb-d3da-1f19d737df0f, alterId: 64, cipher: auto,udp: true, tls: true, skip-cert-verify: true, network: ws, ws-path: /brahian, ws-headers: {Host: www.segurosbolivar.com}}
-- {name: 🚀avantel🍃, server: xray.mynetfree.tk, port: 443, type: vmess, uuid: 8be9f429-64db-4acb-d3da-1f19d737df0f, alterId: 64, cipher: auto,udp: true, tls: true, skip-cert-verify: true, network: ws, ws-path: /brahian, ws-headers: {Host: www.gov.co}}
+- {name: 🚀movistar🍃, server: 132.226.165.29, port: 443, type: vmess, uuid: 7aff4a32-e736-43fd-8f30-1ed37ead49b5, alterId: 64, cipher: auto,udp: true, tls: true, skip-cert-verify: true, network: ws, ws-path: /rosa, ws-headers: {Host: www.segurosbolivar.com}}
+- {name: 🚀avantel🍃, server: 132.226.165.29, port: 443, type: vmess, uuid: 7aff4a32-e736-43fd-8f30-1ed37ead49b5, alterId: 64, cipher: auto,udp: true, tls: true, skip-cert-verify: true, network: ws, ws-path: /rosa, ws-headers: {Host: www.gov.co}}
 
 - name: "movistar trojan"
   type: trojan
