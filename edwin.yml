@@ -125,76 +125,12 @@ dns:
     - "*.mcdn.bilivideo.cn"
     - +.media.dssott.com
 proxies:
-  - name: edwin movistar
-    server: 132.226.165.29
-    port: 20332
-    type: trojan
-    password: chara
-    skip-cert-verify: true
-    sni: www.segurosbolivar.com
-    udp: true
-  - name: Edwin wom
-    server: 104.18.10.163
-    port: 20332
-    type: trojan
-    password: chara
-    skip-cert-verify: true
-    sni: vrray.networkvpn.ga
-    network: ws
-    ws-opts:
-      path: ""
-      headers:
-        Host: vrray.networkvpn.ga
-    udp: true
-  - name: brahian movistar
-    server: 132.226.165.29
-    port: 443
-    type: vmess
-    uuid: 8be9f429-64db-4acb-d3da-1f19d737df0f
-    alterId: 64
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: www.segurosbolivar.com
-    network: ws
-    ws-opts:
-      path: /brahian
-      headers:
-        Host: www.segurosbolivar.com
-    udp: true
-  - name: jaime movistar
-    server: 132.226.165.29
-    port: 36200
-    type: trojan
-    password: Jaimearias
-    skip-cert-verify: true
-    sni: www.segurosbolivar.com
-    udp: true
-  - name: brahian wom
-    server: 104.18.11.163
-    port: 443
-    type: vmess
-    uuid: 8be9f429-64db-4acb-d3da-1f19d737df0f
-    alterId: 64
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: vrray.networkvpn.ga
-    network: ws
-    ws-opts:
-      path: /brahian
-      headers:
-        Host: vrray.networkvpn.ga
-    udp: true
+  - {name: cdn2.industriaschara.tk_vmess_ws, server: 104.18.13.130, port: 443, type: vmess, uuid: 64, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: cdn2.industriaschara.tk, network: ws, ws-opts: {path: /kjlpvws, headers: {Host: cdn2.industriaschara.tk}}, udp: true}
 proxy-groups:
   - name: FASTSSH-SSHKIT-HOWDY
     type: select
     proxies:
-      - edwin movistar
-      - Edwin wom
-      - brahian movistar
-      - jaime movistar
-      - brahian wom
+      - cdn2.industriaschara.tk_vmess_ws
       - LOAD-BALANCE
       - BEST-PING
       - FALLBACK
@@ -205,31 +141,19 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - edwin movistar
-      - Edwin wom
-      - brahian movistar
-      - jaime movistar
-      - brahian wom
+      - cdn2.industriaschara.tk_vmess_ws
   - name: BEST-PING
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - edwin movistar
-      - Edwin wom
-      - brahian movistar
-      - jaime movistar
-      - brahian wom
+      - cdn2.industriaschara.tk_vmess_ws
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - edwin movistar
-      - Edwin wom
-      - brahian movistar
-      - jaime movistar
-      - brahian wom
+      - cdn2.industriaschara.tk_vmess_ws
 rules:
   - MATCH,FASTSSH-SSHKIT-HOWDY
