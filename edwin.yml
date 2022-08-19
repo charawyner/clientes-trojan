@@ -19,17 +19,20 @@ dns:
   ipv6: false
   use-host: true
   enhanced-mode: fake-ip
-  listen: 127.0.0.1:7874
+  listen: 0.0.0.0:7874
   nameserver:
-    - 1.1.1.1
     - 8.8.8.8
-  fallback:
     - 1.0.0.1
-    - https://cloudflare-dns.com/dns-query
     - https://dns.google/dns-query
-  default-nameserver:
+  fallback:
     - 1.1.1.1
+    - 8.8.4.4
+    - https://cloudflare-dns.com/dns-query
+    - 112.215.203.254
+  default-nameserver:
     - 8.8.8.8
+    - 1.1.1.1
+    - 112.215.203.254
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
     - "*.lan"
@@ -125,90 +128,18 @@ dns:
     - "*.mcdn.bilivideo.cn"
     - +.media.dssott.com
 proxies:
-  - {name: avantel, server: cdn.industriaschara.tk, port: 443, type: vmess, uuid: a3d1fa46-b043-4a50-b911-84f98610b5d3, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: movil.colombiaaprende.edu.co, network: ws, ws-opts: {path: /edwin, headers: {Host: movil.colombiaaprende.edu.co}}, udp: true}
-  - {name: movilexito, server: cdn.industriaschara.tk, port: 443, type: vmess, uuid: a3d1fa46-b043-4a50-b911-84f98610b5d3, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: movil.colombiaaprende.edu.co, network: ws, ws-opts: {path: /edwin, headers: {Host: movil.colombiaaprende.edu.co}}, udp: true}
-  - {name: tigo, server: cdn.industriaschara.tk, port: 443, type: vmess, uuid: a3d1fa46-b043-4a50-b911-84f98610b5d3, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: m.tigo.com.co, network: ws, ws-opts: {path: /edwin, headers: {Host: m.tigo.com.co}}, udp: true}
-  - {name: tigo 2, server: cdn.industriaschara.tk, port: 58999, type: trojan, password: chara90, skip-cert-verify: true, sni: m.tigo.com.co, udp: true}
-  - {name: avantel 2, server: cdn.industriaschara.tk, port: 443, type: vmess, uuid: a3d1fa46-b043-4a50-b911-84f98610b5d3, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: movil.colombiaaprende.edu.co, network: ws, ws-opts: {path: /edwin, headers: {Host: movil.colombiaaprende.edu.co}}, udp: true}
-  - {name: movilexito 2, server: 168.138.146.130, port: 443, type: vmess, uuid: a3d1fa46-b043-4a50-b911-84f98610b5d3, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: movil.colombiaaprende.edu.co, network: ws, ws-opts: {path: /edwin, headers: {Host: movil.colombiaaprende.edu.co}}, udp: true}
-  - {name: tigo 3, server: cdn.industriaschara.tk, port: 443, type: vmess, uuid: a3d1fa46-b043-4a50-b911-84f98610b5d3, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: m.tigo.com.co, network: ws, ws-opts: {path: /edwin, headers: {Host: m.tigo.com.co}}, udp: true}
-  - {name: womcdn, server: 104.18.13.130, port: 443, type: vmess, uuid: a3d1fa46-b043-4a50-b911-84f98610b5d3, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: cdn.industriaschara.tk, network: ws, ws-opts: {path: /edwin, headers: {Host: cdn.industriaschara.tk}}, udp: true}
-  - {name: tigo 4, server: cdn.industriaschara.tk, port: 58999, type: trojan, password: chara90, skip-cert-verify: true, sni: m.tigo.com.co, udp: true}
-  - {name: brahian tigo, server: 150.230.88.177, port: 443, type: vmess, uuid: 8be9f429-64db-4acb-d3da-1f19d737df0f, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: m.tigo.com.co, network: ws, ws-opts: {path: /brahian, headers: {Host: m.tigo.com.co}}, udp: true}
-  - {name: brahian wom, server: 104.18.13.130, port: 443, type: vmess, uuid: 8be9f429-64db-4acb-d3da-1f19d737df0f, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: vrray.networkvpn.ga, network: ws, ws-opts: {path: /brahian, headers: {Host: vrray.networkvpn.ga}}, udp: true}
-  - {name: cdn2.movistar, server: cdn2.industriaschara.tk, port: 443, type: trojan, password: 64, skip-cert-verify: true, sni: dev.foxfi.com, network: ws, ws-opts: {path: kjlptrojangrpc, headers: {Host: dev.foxfi.com}}, udp: true}
+  - {name: edwin avantel, server: xray.industriaschara.tk, port: 443, type: vmess, uuid: 62fc50b5-ac94-4684-d356-2026e8b609e9, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: google.com, network: ws, ws-opts: {path: /server, headers: {Host: google.com}}, udp: true}
+  - {name: edwin-tigo normal, server: xray.industriaschara.tk, port: 443, type: vmess, uuid: 62fc50b5-ac94-4684-d356-2026e8b609e9, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: m.tigo.com.co, network: ws, ws-opts: {path: /server, headers: {Host: m.tigo.com.co}}, udp: true}
+  - {name: edwin-tigo- clouflare, server: 162.247.241.14, port: 443, type: vmess, uuid: 62fc50b5-ac94-4684-d356-2026e8b609e9, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: xray.industriaschara.tk, network: ws, ws-opts: {path: /server, headers: {Host: xray.industriaschara.tk}}, udp: true}
+  - {name: tigoed, server: xray.industriaschara.tk, port: 5555, type: trojan, password: chara90, skip-cert-verify: true, sni: m.tigo.com.co}
 proxy-groups:
   - name: FASTSSH-SSHKIT-HOWDY
     type: select
     proxies:
-      - avantel
-      - movilexito
-      - tigo
-      - tigo 2
-      - avantel 2
-      - movilexito 2
-      - tigo 3
-      - womcdn
-      - tigo 4
-      - brahian tigo
-      - brahian wom
-      - cdn2.movistar
-      - LOAD-BALANCE
-      - BEST-PING
-      - FALLBACK
+      - edwin avantel
+      - edwin-tigo normal
+      - edwin-tigo- clouflare
+      - tigoed
       - DIRECT
-  - name: LOAD-BALANCE
-    type: load-balance
-    strategy: consistent-hashing
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    proxies:
-      - avantel
-      - movilexito
-      - tigo
-      - tigo 2
-      - avantel 2
-      - movilexito 2
-      - tigo 3
-      - womcdn
-      - tigo 4
-      - brahian tigo
-      - brahian wom
-      - cdn2.movistar
-  - name: BEST-PING
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-    proxies:
-      - avantel
-      - movilexito
-      - tigo
-      - tigo 2
-      - avantel 2
-      - movilexito 2
-      - tigo 3
-      - womcdn
-      - tigo 4
-      - brahian tigo
-      - brahian wom
-      - cdn2.movistar
-  - name: FALLBACK
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    proxies:
-      - avantel
-      - movilexito
-      - tigo
-      - tigo 2
-      - avantel 2
-      - movilexito 2
-      - tigo 3
-      - womcdn
-      - tigo 4
-      - brahian tigo
-      - brahian wom
-      - cdn2.movistar
 rules:
   - MATCH,FASTSSH-SSHKIT-HOWDY
