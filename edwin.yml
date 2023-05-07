@@ -128,10 +128,10 @@ dns:
     - "*.mcdn.bilivideo.cn"
     - +.media.dssott.com
 proxies:
-  - {name: edwin avantel, server: 152.67.32.192, port: 443, type: vmess, uuid: 62fc50b5-ac94-4684-d356-2026e8b609e9, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: google.com, network: ws, ws-opts: {path: /server, headers: {Host: google.com}}, udp: true}
+  - {name: edwin avantel, server: xrray.industriaschara.com.co, port: 443, type: vmess, uuid: 62fc50b5-ac94-4684-d356-2026e8b609e9, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: google.com, network: ws, ws-opts: {path: /server, headers: {Host: google.com}}, udp: true}
   - {name: edwin-tigo normal, server: 152.67.32.192, port: 443, type: vmess, uuid: 62fc50b5-ac94-4684-d356-2026e8b609e9, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: compras.tigo.com.co, network: ws, ws-opts: {path: /server, headers: {Host: compras.tigo.com.co}}, udp: true}
   - {name: edwin-wom- clouflare, server: investors.spotify.com, port: 443, type: vmess, uuid: 62fc50b5-ac94-4684-d356-2026e8b609e9, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: xray.industriaschara.tk, network: ws, ws-opts: {path: /server, headers: {Host: xray.industriaschara.tk}}, udp: true}
-  - {name: tigoed, server: 152.67.32.192, port: 5555, type: trojan, password: chara90, skip-cert-verify: true, sni: compras.tigo.com.co}
+  - {name: tigoed, server: xrray.industriaschara.com.co, port: 5555, type: trojan, password: chara90, skip-cert-verify: true, sni: compras.tigo.com.co}
 proxy-groups:
   - name: FASTSSH-SSHKIT-HOWDY
     type: select
